@@ -70,7 +70,7 @@ class ReviewWorkshopDetails extends Component {
         formdata.append('id', workshop.workshopId)
         formdata.append('status', review.status)
         formdata.append('rComment', review.reviewComment)
-        formdata.append('conductor', "senath@gmail.net")
+        formdata.append('conductor', workshop.conductor)
         this.setState({ loading: true })
         ReviewWorkshopDetailDataService.reviewWorkshop(formdata)
             .then(() => {
@@ -123,7 +123,7 @@ class ReviewWorkshopDetails extends Component {
             })
     }
     Schema = {
-        reviewComment: Joi.string().required().label("Comment").max(10),
+        reviewComment: Joi.string().required().label("Comment").max(30),
         status: Joi.string().required().label("Status"),
     }
 
@@ -249,7 +249,7 @@ class ReviewWorkshopDetails extends Component {
                                     <Button type="submit" variant="dark" disabled={this.validate()} className="workshop1-button">Save</Button>
                                 </Col>
                                 <Col>
-                                    <Button style={{float: "right"}} type="light" variant="dark" onClick={() => this.props.history.push('/reviewer')} className="workshop1-button"> <FontAwesomeIcon icon={faBackward} /> Back</Button>
+                                    <Button style={{ float: "right" }} type="light" variant="dark" onClick={() => this.props.history.push('/reviewer')} className="workshop1-button"> <FontAwesomeIcon icon={faBackward} /> Back</Button>
                                 </Col>
                             </Row>
                         </Form>

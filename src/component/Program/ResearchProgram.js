@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Tabs, Tab } from 'react-bootstrap';
-import './Program.css'
+// import './Program.css'
 import PapersList from '../PapersList/PapersList';
 
 class ResearchProgram extends Component {

@@ -7,7 +7,7 @@ export default function InputField(props) {
 
         <Form.Group controlId="aa" >
             <Form.Label>{FormLabel}</Form.Label>
-            <Form.Control onChange={handleChange} name={name} value={value} placeholder={placeholder} type={type} disabled={trap} />
+            <Form.Control onChange={handleChange} name={name} value={value} placeholder={placeholder} type={type} disabled={trap} data-testid="editor" />
             <Form.Text className="text-muted">
                 {FormText}
             </Form.Text>

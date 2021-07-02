@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import './ImportantDates.css'
+// import './ImportantDates.css'
 
 class ImportantDates extends Component {
-    state = {  }
-    render() { 
-        return ( 
+    state = {}
+    render() {
+        return (
             <div>
                 <div className="workshops-title">
                     IMPORTANT DATES
@@ -15,7 +15,7 @@ class ImportantDates extends Component {
 
                     <div className="importantdates-div">
                         <Row xs={1} md={2} className="importantdates-row importantdates-date">
-                            <Col className="importantdates-col">
+                            <Col className="importantdates-col" data-testid="dates">
                                 01st January 2021
                             </Col>
                             <Col className="importantdates-col importantdates-title">
@@ -62,8 +62,8 @@ class ImportantDates extends Component {
 
                 </Container>
             </div>
-         );
+        );
     }
 }
- 
+
 export default ImportantDates;

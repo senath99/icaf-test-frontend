@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AdminDashboardDataService from './AdminDashboardDataService';
 import InputField from '../../Commons/InputField';
 class AdminPost extends Component {
-    constructor(props) {
+    constructor(props) {//test12
         super(props);
         this.state = {
             loading: false,
@@ -56,7 +56,7 @@ class AdminPost extends Component {
     }
 
     validateField = ({ name, value }) => {
-        const miniWorkshop = { [name]: value } //Computed operators used [ES6]
+        const miniWorkshop = { [name]: value } //Computed operators used [ES6]/
         const miniSchema = { [name]: this.Schema[name] } //Extracted property from Schema
         const { error } = Joi.validate(miniWorkshop, miniSchema)
         return error ? error.details[0].message : null;
@@ -149,7 +149,7 @@ class AdminPost extends Component {
                 <Container style={{ minHeight: '600px' }}>
                     <Card style={{ marginTop: '20px', marginBottom: '10px' }}>
                         <img src={`https://icaf-2021-proposals.s3.amazonaws.com/${workshop.imageName}`} style={{ maxwidth: "400px", maxHeight: '300px' }} />
-                        <div style={{ marginLeft: '20px', marginBottom: '20px',marginTop:'10px' }}>
+                        <div style={{ marginLeft: '20px', marginBottom: '20px', marginTop: '10px' }}>
                             <h3>{workshop.title}</h3>
                             <h4>{workshop.subject}</h4>
                             <p>{workshop.description}</p>

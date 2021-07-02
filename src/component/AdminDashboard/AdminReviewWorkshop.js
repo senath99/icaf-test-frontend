@@ -56,9 +56,9 @@ class AdminReviewWorkshop extends Component {
                 workshop['subject'] = data.subject
                 workshop['filename'] = data.fileName
                 workshop['currentdate'] = data.current
-                workshop['reviewComment'] = data.status
+                workshop['reviewComment'] = data.rcomment
                 review['adminComment'] = data.acomment
-                review['status'] = data.rcomment
+                review['status'] = data.status
                 this.setState({
                     workshop, review
                 })

@@ -3,7 +3,7 @@ import { Form, Container, Button, Modal, Spinner, Col, Row, Badge, Alert } from 
 import swal from 'sweetalert';
 import Joi from 'joi-browser'
 import { faChalkboardTeacher, faCalendarTimes, faBackward } from '@fortawesome/free-solid-svg-icons';
-import './WorkshopEditor.css'
+// import './WorkshopEditor.css';
 import InputField from '../../Commons/InputField';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import EditorDataservice from './EditorDataservice';
@@ -199,7 +199,7 @@ class WorkshopEditor extends Component {
                 <div className="workshopregistration-title">
                     EDITOR'S PORTAL
                 </div>
-                <Container className="workshopregistration-container">
+                <Container className="workshopregistration-container" >
                     <Form autoComplete="off" onSubmit={editWorkshop}>
                         <div className="workshopregistration-head">
                             <h4 className="workshopregistration-head-font">  <FontAwesomeIcon icon={faChalkboardTeacher} />Workshop Details</h4>
@@ -310,7 +310,7 @@ class WorkshopEditor extends Component {
                             <h6>Published Image</h6>
                         </Row>
                         <Row style={{ marginBottom: '20px' }}>
-                            {workshop.imageName ? <img className="editor-published-image" src={`https://icaf-2021-proposalss.s3.amazonaws.com/${workshop.imageName}`} alt="card" />
+                            {workshop.imageName ? <img className="editor-published-image" src={`https://icaf-2021-proposals.s3.amazonaws.com/${workshop.imageName}`} alt="card" />
                                 : <Badge variant="danger"><p>Image not Published yet!</p></Badge>}
                         </Row>
                         {/* 2nd Row Ends */}

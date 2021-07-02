@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom'
 import ProgramDataService from './ProgramDataService';
-import { Col, InputGroup, FormControl, Row, Modal, Spinner, Card, Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { Col, Row, Modal, Spinner, Card, Button } from 'react-bootstrap';
+
 class PostList extends Component {
     constructor(props) {
         super(props);
@@ -47,7 +45,7 @@ class PostList extends Component {
 
     };
     render() {
-        const { proposals, search } = this.state
+        const { proposals } = this.state
 
         const searchBox = {
             width: "250px",
@@ -64,7 +62,7 @@ class PostList extends Component {
                     </InputGroup>
                 </div> */}
                 <div className={"row mt-4 pt-5"} >
-                    <Row >
+                    <Row data-testid="postlist">
                         {proposals.map((p) => (
                             <Col sm={3} className={"card-group mb-4"} key={p.workshopId}>
                                 <Card style={{ width: '1200px', height: '300px' }}>
@@ -91,4 +89,4 @@ class PostList extends Component {
         )
     }
 }
-export default withRouter(PostList)
+export default PostList

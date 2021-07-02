@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { Container, Button, Tabs, Tab } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCogs, faFileDownload, faFilePdf, faFilePowerpoint, faFileUpload } from '@fortawesome/free-solid-svg-icons';
-import './Program.css'
+// import './Program.css'
 import PapersList from '../PapersList/PapersList';
 
 class Program extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state = { }
+        this.state = {}
 
         this.redirectToLogin = this.redirectToLogin.bind(this);
     }
@@ -18,8 +18,8 @@ class Program extends Component {
         return this.props.history.push('/login')
     }
 
-    render() { 
-        return ( 
+    render() {
+        return (
             <div>
                 <div className="program-title">
                     PROGRAM
@@ -28,22 +28,22 @@ class Program extends Component {
                 <div>
                     <Container className="program-container">
                         <div className="program-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit est, posuere non libero ac, 
-                            lobortis pharetra lorem. Donec volutpat mi eu tortor elementum, vitae placerat libero pulvinar. 
-                            Aliquam rhoncus lectus nec mauris sagittis semper. Maecenas justo leo, interdum vel viverra at, 
-                            efficitur a orci. Integer at placerat velit. Nunc vehicula tristique elit sed suscipit. Mauris varius 
-                            odio ut lacus interdum, ac mollis elit lobortis. Maecenas fermentum blandit odio nec interdum. Nunc 
-                            efficitur diam nulla, hendrerit egestas augue dapibus eu. Donec vitae iaculis neque. Proin fermentum 
-                            lectus purus, eget auctor mi gravida ut. Vivamus pellentesque est at ante tempor, sit amet sollicitudin 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit est, posuere non libero ac,
+                            lobortis pharetra lorem. Donec volutpat mi eu tortor elementum, vitae placerat libero pulvinar.
+                            Aliquam rhoncus lectus nec mauris sagittis semper. Maecenas justo leo, interdum vel viverra at,
+                            efficitur a orci. Integer at placerat velit. Nunc vehicula tristique elit sed suscipit. Mauris varius
+                            odio ut lacus interdum, ac mollis elit lobortis. Maecenas fermentum blandit odio nec interdum. Nunc
+                            efficitur diam nulla, hendrerit egestas augue dapibus eu. Donec vitae iaculis neque. Proin fermentum
+                            lectus purus, eget auctor mi gravida ut. Vivamus pellentesque est at ante tempor, sit amet sollicitudin
                             orci mollis.
                         </div>
 
                         <div className="program-topics">
-                            <Tabs style={{textAlign: "center"}} variant="tabs" defaultActiveKey="a" unmountOnExit={true} >
-                                <Tab style={{textAlign: "left"}} eventKey="a" title="Papers">
-                                    <PapersList redirectToLogin={this.redirectToLogin}  />
+                            <Tabs style={{ textAlign: "center" }} variant="tabs" defaultActiveKey="a" unmountOnExit={true} >
+                                <Tab style={{ textAlign: "left" }} eventKey="a" title="Papers">
+                                    <PapersList redirectToLogin={this.redirectToLogin} />
                                 </Tab>
-                                <Tab style={{textAlign: "left"}} eventKey="b" title="Workshops">
+                                <Tab style={{ textAlign: "left" }} eventKey="b" title="Workshops">
                                     Workshop List comes here
                                 </Tab>
                             </Tabs>
@@ -52,8 +52,8 @@ class Program extends Component {
                     </Container>
                 </div>
             </div>
-         );
+        );
     }
 }
- 
+
 export default Program;
