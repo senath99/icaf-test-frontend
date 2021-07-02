@@ -15,14 +15,14 @@ test('message box', () => {
     console.log("Important Dates")
 })
 
-test('Should todo component', () => {
+test('test 01', () => {
     render(<ImportantDates />)
     const element = screen.getByTestId('dates')
     expect(element).toBeInTheDocument();
     expect(element).toHaveTextContent('01st January 2021')
 })
 
-describe('Input field component', () => {
+describe('test 03', () => {
     it('starts with 0', () => {
         const Shallowwrapper = shallow(<ImportantDates />)
         console.log('Shallow HTML', Shallowwrapper.debug())

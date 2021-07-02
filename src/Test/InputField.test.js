@@ -16,13 +16,13 @@ test('message box', () => {
     console.log("Start")
 })
 
-test('Should todo component', () => {
+test('test 03', () => {
     render(<InputField />)
     const element = screen.getByTestId('editor')
     expect(element).toBeInTheDocument();
 })
 
-describe('Input field component', () => {
+describe('test 04', () => {
     it('starts with 0', () => {
         const Shallowwrapper = shallow(<InputField />)
         console.log('Shallow HTML', Shallowwrapper.debug())

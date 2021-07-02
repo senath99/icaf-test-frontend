@@ -20,13 +20,13 @@ test('message box', () => {
     console.log("Important Dates")
 })
 
-test('Should retrieve todoes', () => {
+test('test 06', () => {
     render(<PostList />)
     const element = screen.getByTestId('postlist')
     expect(element).toContainHTML('<Col>')
 })
 
-test('create snapshot', () => {
+test('test 07', () => {
     const tree = renderer.create(<PostList />).toJSON()
     console.log(tree)
 })
