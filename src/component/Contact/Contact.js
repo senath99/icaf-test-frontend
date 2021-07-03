@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import GoogleMaps from '../../Commons/GoogleMaps';
-import "./Contact.css"
+
 
 class Contact extends Component {
 

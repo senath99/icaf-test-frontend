@@ -4,7 +4,7 @@
   "description": "International Conference of Application Frameworks Front End",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel src/index.html",
     "test": "jest --watch"
   },
   "author": "Shamoda Jayasekara",
@@ -50,6 +50,4 @@
     "react-test-renderer": "^17.0.2",
     "sweetalert": "^2.1.2"
   }
-  
-
 }
