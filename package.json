@@ -4,23 +4,39 @@
   "description": "International Conference of Application Frameworks Front End",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel index.html",
+    "test": "jest --watch"
   },
   "author": "Shamoda Jayasekara",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
     "@parcel/transformer-image": "^2.0.0-beta.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "babel-jest": "^27.0.6",
+    "global-jsdom": "^8.1.0",
+    "jest": "^27.0.6",
+    "jest-dom": "^4.0.0",
+    "jsdom": "^16.6.0",
     "parcel": "^2.0.0-beta.2"
   },
   "dependencies": {
+    "@babel/plugin-syntax-jsx": "^7.14.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@testing-library/react": "^12.0.0",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.0",
     "chart.js": "^3.3.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-15": "^1.4.3",
+    "enzyme-adapter-react-16": "^1.15.6",
     "google-maps-react": "^2.0.6",
+    "jest-environment-jsdom": "^27.0.6",
     "joi": "^17.4.0",
     "joi-browser": "^13.4.0",
     "moment": "^2.29.1",
@@ -30,6 +46,10 @@
     "react-dom": "^17.0.2",
     "react-paypal-button-v2": "^2.6.3",
     "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-test-renderer": "^17.0.2",
     "sweetalert": "^2.1.2"
   }
+  
+
 }
